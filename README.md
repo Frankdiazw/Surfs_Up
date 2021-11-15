@@ -9,6 +9,8 @@ In the results, two dataframes were created to visualize the temperature of Oahu
 
 ![](https://github.com/Frankdiazw/Surfs_Up/blob/main/Resources/June_temps.png)![](https://github.com/Frankdiazw/Surfs_Up/blob/main/Resources/December_temps.png)
 
+- Figure 1 and 2. Dataframes from the months of June and December in Oahu.
+
 
 
 ## Summary
