@@ -5,5 +5,8 @@ For this challenge, the user tries to convince some investors to invest in the u
 
 The analysis was carried out on jupyter notebook using Python to create a more friendly and understandable dataframes so that members can visualize the behavior of Oahu's weather during those months.
 ## Results
+In the results, two dataframes were created to visualize the temperature of Oahu in the months of June and December in order to provide investors with relevant weather data.
+
+![](https://github.com/Frankdiazw/Surfs_Up/blob/main/Resources/June_temps.png)![](https://github.com/Frankdiazw/Surfs_Up/blob/main/Resources/December_temps.png)
 
 ## Summary
