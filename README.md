@@ -26,4 +26,6 @@ It was also calculated that the average temperature of Oahu in the months of Jun
 - If the information gathered wanted to be compared to another station, we can call the next code to se the most active stations to gather information for the analysis:
   - session.query(Measurement.station, func.count(Measurement.station)).group_by(Measurement.station).order_by(func.count(Measurement.station).desc()).all()
 
-- 
+- We can also gather the amount of precipitation at the most active station for June and December.
+  - session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == 6).all()
+  - session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == 12).all()
