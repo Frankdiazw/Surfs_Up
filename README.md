@@ -23,9 +23,9 @@ Taking into account what has been said in the Results section (see Results for m
 According to various sources consulted, it is considered a very cold temperature to surf and go to the beach when the temperature is registered below 50 degrees Fahrenheit. That said, during the analysis the lowest temperature recorded on Oahu was 56 degrees Fahrenheit, which is still above the minimum temperature for surfing.
 It was also calculated that the average temperature of Oahu in the months of June and December were 75 and 71 degrees Fahrenheit respectively. These are very good numbers as customers can expect very similar temperatures throughout the year and both meet the requirement of being above the minimum. That said, for the store it is very good data, since store sales are not going to decrease drastically in any season of the year.
 
-- If the information gathered wanted to be compared to another station, we can call the next code to se the most active stations to gather information for the analysis:
+- :whale:If the information gathered wanted to be compared to another station, we can call the next code to se the most active stations to gather information for the analysis:
   - session.query(Measurement.station, func.count(Measurement.station)).group_by(Measurement.station).order_by(func.count(Measurement.station).desc()).all()
 
-- :tropical_fish: We can also gather the amount of precipitation at the most active station for June and December.
+- :tropical_fish:We can also gather the amount of precipitation at the most active station for June and December.
   - session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == 6).all()
   - session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == 12).all()
